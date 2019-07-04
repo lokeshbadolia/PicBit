@@ -1,9 +1,14 @@
 # PicBit
-PicBit is Mobile Blogging Application which uses firebase as a backend.
+PicBit is Mobile Blogging Application which uses firebase as a cloud database.
 
 “Picbit” purely focuses on user interaction and enhance person’s knowledge about different aspects and view. 
 It’s designed on the idea where a Person can write his/her reviews on a topic which can be anything. 
 (Eg- Games, Latest Movies, Technology etc.) and then other people can read and review his\her thoughts.
+
+<p align="center">
+  <img src="https://github.com/lokeshbadolia/PicBit/blob/master/wall4.png" width="200"  height="350" >
+  <img src="https://github.com/lokeshbadolia/PicBit/blob/master/wallremake.png" width="622"  height="350" >
+</p>
 
 ## Application Objective
 
@@ -30,5 +35,3 @@ It’s designed on the idea where a Person can write his/her reviews on a topic 
 - Android (JAVA)
 - Firebase
 - IDE - Android Studio
-
-![Alt text](https://github.com/lokeshbadolia/PicBit/path/to/wallremake.png?raw=true "Main Image")
