@@ -31,4 +31,4 @@ It’s designed on the idea where a Person can write his/her reviews on a topic 
 - Firebase
 - IDE - Android Studio
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Alt text](https://github.com/lokeshbadolia/PicBit/path/to/wallremake.png?raw=true "Main Image")
