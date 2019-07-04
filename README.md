@@ -5,9 +5,9 @@ PicBit is Mobile Blogging Application which uses firebase as a cloud database.
 It’s designed on the idea where a Person can write his/her reviews on a topic which can be anything. 
 (Eg- Games, Latest Movies, Technology etc.) and then other people can read and review his\her thoughts.
 
-<p align="center">
-  <img src="https://github.com/lokeshbadolia/PicBit/blob/master/wall4.png" width="220"  height="350" >
-  <img src="https://github.com/lokeshbadolia/PicBit/blob/master/wallremake.png" width="632"  height="350" >
+<p align="left">
+  <img src="https://github.com/lokeshbadolia/PicBit/blob/master/wall4.png" width="200"  height="350" >
+  <img src="https://github.com/lokeshbadolia/PicBit/blob/master/wallremake.png" width="622"  height="350" >
 </p>
 
 ## Application Objective
