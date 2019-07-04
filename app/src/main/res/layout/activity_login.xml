@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:scaleType="centerCrop"
+    tools:context="com.picbit.info.android.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:onClick="openRegisterPage"
+                    android:src="@drawable/ic_keyboard_arrow_left_white_36dp" />
+
+                <TextView
+                    android:id="@+id/loginTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:gravity="right"
+                    android:text="Login"
+                    android:textColor="#F0F7f7"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/logo_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="PicBit"
+                    android:textColor="#F0F7F7"
+                    android:textSize="80sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_person_white_36dp" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/loginEmailField"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="sans-serif"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/md_white_1000"
+                            android:textColorHint="@color/md_grey_50"
+                            android:textSize="13dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_vpn_key_white_36dp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextLabel">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/loginPasswordField"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:focusableInTouchMode="true"
+                            android:fontFamily="sans-serif"
+                            android:hint="Password"
+                            android:imeActionId="@+id/login"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/md_white_1000"
+                            android:textColorHint="@color/md_grey_50"
+                            android:textSize="13dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/loginBtn"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/login_box4"
+                        android:text="Login"
+                        android:textAllCaps="false"
+                        android:textColor="#D6E8E9"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.gms.common.SignInButton
+                        android:id="@+id/googleBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="3dp"
+                        android:background="#00ffffff"
+                        android:paddingLeft="17dp">
+
+                    </com.google.android.gms.common.SignInButton>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#00ffffff"
+                        android:onClick="forgetPasswordBtnclick"
+                        android:text="Forget Password?"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/registerTranBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:background="#00ffffff"
+                        android:onClick="registerBtnclick"
+                        android:text="Don't have an Account? Sign Up"
+                        android:textAllCaps="false"
+                        android:textColor="@color/md_white_1000"
+                        android:textStyle="bold"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="3dp"
+                        android:text="By logging into PicBit, You are liable to accept all our Terms and Condition"
+                        android:textColor="#D6E8E9"
+                        android:textSize="12dp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#00ffffff"
+                        android:onClick="openTermsPage"
+                        android:text="Read Terms and Condition here!"
+                        android:textAllCaps="false"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="2.5"
+                    android:paddingBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:text="Support:"
+                        android:textColor="#D6E8E9"
+                        android:textSize="10dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:text="PicBit App Uses Firebase as a Cloud Storage to store backend data."
+                        android:textColor="#D6E8E9"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="10dp" />
+                    </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+    <!--      android:background="#00ffffff" -->

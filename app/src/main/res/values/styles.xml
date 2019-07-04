@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#3C6E71</item>
+        <item name="colorPrimaryDark">#335E60</item>
+        <item name="colorAccent">#4E8E92</item>
+     <!--   <item name="android:textColorPrimary">#D6E8E9</item>
+        <item name="android:textColorSecondary">#D6E8E9</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>-->
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">#D6E8E9</item>
+        <item name="android:textSize">20sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">#D6E8E9</item>
+        <item name="colorControlNormal">#D6E8E9</item>
+        <item name="colorControlActivated">#70AFB3</item>
+    </style>
+
+    <!--  <style name="AppTheme.NoActionBar">
+          <item name="windowActionBar">false</item>
+          <item name="windowNoTitle">true</item>
+      </style>
+
+      <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+      <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+
+</resources>

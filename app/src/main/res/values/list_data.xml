@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cetegory_menu_item">
+    <item>Music</item>
+    <item>Fashion</item>
+    <item>Auto-Mobiles</item>
+    <item>Travel</item>
+    <item>Food</item>
+    <item>Technology</item>
+    <item>Movie</item>
+    <item>Anime</item>
+    <item>Marketing</item>
+    <item>Lifestyle</item>
+    <item>Social-Media</item>
+    <item>Education</item>
+    <item>Celebrity-Gossip</item>
+    <item>Sports</item>
+    <item>Photograpy</item>
+    <item>Animal</item>
+    <item>Gaming</item>
+    <item>Other</item>
+    </string-array>
+</resources>

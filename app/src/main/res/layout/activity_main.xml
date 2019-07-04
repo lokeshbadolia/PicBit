@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F7F7"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.picbit.info.android.MainActivity">
+
+    <!-- <android.support.v4.widget.SwipeRefreshLayout
+         xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/swipe_refresh_layout"
+         android:layout_width="match_parent"
+
+         android:layout_height="wrap_content"> -->
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/Data_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="10dp"
+                android:src="@mipmap/ic_add_a_photo_white_24dp" />
+
+            <!--    <include
+                    layout="@layout/floting_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="81dp" /> -->
+
+
+            <!--    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                   android:id="@+id/adView2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="bottom|end"
+                   ads:adSize="SMART_BANNER"
+                   ads:adUnitId="ca-app-pub-4453287392380497/5965622963">
+               </com.google.android.gms.ads.AdView>
+        -->
+        </android.support.design.widget.CoordinatorLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigationDrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:isScrollContainer="true"
+            app:menu="@menu/navigation_menu"
+            app:headerLayout="@layout/navigation_header"/>
+
+    </android.support.v4.widget.DrawerLayout>
+    <!--   </android.support.v4.widget.SwipeRefreshLayout> --><!--   app:headerLayout="@layout/navigation_header"  -->
+</RelativeLayout>

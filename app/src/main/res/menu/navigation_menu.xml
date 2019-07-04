@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_MainPage"
+            android:icon="@mipmap/backtohome"
+            android:title="Category" />
+
+        <item
+            android:id="@+id/nav_Profile"
+            android:icon="@mipmap/profile"
+            android:title="Profile" />
+
+     <!--   <item
+            android:id="@+id/nav_EditProfile"
+            android:icon="@mipmap/editprofile"
+            android:title="Edit Profile" /> -->
+
+        <item
+            android:id="@+id/nav_ContactUs"
+            android:icon="@mipmap/contactus"
+            android:title="Contact Us" />
+
+    <!--    <item
+            android:id="@+id/nav_DevProfile"
+            android:icon="@mipmap/developerprofile"
+            android:title="Developer" /> -->
+
+
+        <item
+            android:id="@+id/nav_LogOut"
+            android:icon="@mipmap/logout"
+            android:title="Logout" />
+    </group>
+
+    <!-- ========================================================================== -->
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_Paypal"
+                android:icon="@mipmap/paypal"
+                android:title="Paypal" />
+
+
+            <item
+                android:id="@+id/nav_privacy"
+                android:icon="@mipmap/privacy"
+                android:title="Privacy Policy" />
+
+            <item
+                android:id="@+id/nav_terms"
+                android:icon="@mipmap/terms"
+                android:title="Terms and Condition" />
+
+            <item
+                android:id="@+id/nav_KnowFirebase"
+                android:icon="@mipmap/firebase"
+                android:title="Know Firebase" />
+
+            <item
+                android:id="@+id/nav_icon8"
+                android:icon="@mipmap/icon8"
+                android:title="Visit icon8.com" />
+
+
+        </menu>
+    </item>
+
+    </menu>

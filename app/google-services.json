@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "835333095740",
+    "firebase_url": "https://picbit-e4fe7.firebaseio.com",
+    "project_id": "picbit-e4fe7",
+    "storage_bucket": "picbit-e4fe7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835333095740:android:c372d14b85373687",
+        "android_client_info": {
+          "package_name": "com.picbit.info.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835333095740-ekdudc4ojis84mrddguo2ef9e9pc34bg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.picbit.info.android",
+            "certificate_hash": "f501642e617c1b42083e0c9161c8850d237acfde"
+          }
+        },
+        {
+          "client_id": "835333095740-c50g6s6chmmsu35eeugfrfebhchednol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEPVkjAIuOOChFBhmZTpMhmFPWUQ5-GpA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835333095740-c50g6s6chmmsu35eeugfrfebhchednol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

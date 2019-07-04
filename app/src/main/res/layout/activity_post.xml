@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.picbit.info.android.PostActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_art_track_white_36dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="60dp"
+                    android:layout_weight="9"
+                    android:background="@drawable/setupprofile_box1"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="5dp"
+                    android:text="Upload Your Blog"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="22dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/currentUserPhoto"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#00ffffff"
+                    android:gravity="right"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/userimage" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/getCategoryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/category_box"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="Category :"
+                    android:textColor="#D6E8E9"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/VideoCheckBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Video Url"
+                        android:textColor="#4E8E92"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/imageCheckBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Image"
+                        android:textColor="#4E8E92"
+                        android:textStyle="bold" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/VideoUrlBoxLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#F0F7F7"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="21dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/pointeroff" />
+
+                    <EditText
+                        android:id="@+id/youtube_link"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="8"
+                        android:fontFamily="sans-serif"
+                        android:hint="Paste Youtube Link code here (if any)"
+                        android:inputType="textUri"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:paddingLeft="5dp"
+                        android:textColor="#616161"
+                        android:textColorHint="@color/md_grey_500"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:id="@+id/playVideo"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:src="@drawable/playvideopost" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/youtube_link_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="75dp"
+                        android:text="*eg: from link = [https://www.youtube.com/watch?v=6es1DJKdytQ] Just paste [6es1DJKdytQ] video code in above box. "
+                        android:textColor="#3C6E71"
+                        android:textSize="9dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+
+                    <fragment
+                        android:id="@+id/videoPlay"
+                        android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="#fff" />
+                    <!-- <view
+                         android:id="@+id/videoPlay"
+                         class="com.google.android.youtube.player.YouTubePlayerView"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentTop="true"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginLeft="5dp"
+                         android:layout_marginRight="5dp"
+                         android:background="#fff" /> -->
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/imagePickGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imageSelect1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:adjustViewBounds="true"
+                        android:background="#00ffffff"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/addimagenew" />
+
+                    <!--    <ImageView
+                          android:id="@+id/imageSelect2"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_margin="5dp"
+                          android:adjustViewBounds="true"
+                          android:background="#00ffffff"
+                          android:scaleType="centerCrop"
+                          app:srcCompat="@drawable/addimagenew" />
+
+                             <ImageView
+                          android:id="@+id/imageSelect3"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_margin="5dp"
+                          android:adjustViewBounds="true"
+                          android:background="#00ffffff"
+                          android:scaleType="centerCrop"
+                          app:srcCompat="@drawable/insetimage" />
+
+                      <ImageView
+                          android:id="@+id/imageSelect4"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_margin="5dp"
+                          android:adjustViewBounds="true"
+                          android:background="#00ffffff"
+                          android:scaleType="centerCrop"
+                          app:srcCompat="@drawable/insetimage" />
+
+                      <ImageView
+                          android:id="@+id/imageSelect5"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_margin="5dp"
+                          android:adjustViewBounds="true"
+                          android:background="#00ffffff"
+                          android:scaleType="centerCrop"
+                          app:srcCompat="@drawable/insetimage" /> -->
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/imageView_link_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="For Best Result.. Use 1280x720px / 1920x1080px Images."
+                    android:textColor="#3C6E71"
+                    android:textSize="10dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/pointeroff" />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="1dp">
+
+                        <EditText
+                            android:id="@+id/titleField"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="sans-serif"
+                            android:hint="Title/Type of Post"
+                            android:inputType="textMultiLine"
+                            android:maxLength="180"
+                            android:maxLines="5"
+                            android:paddingLeft="5dp"
+                            android:textColor="#616161"
+                            android:textColorHint="@color/md_grey_500"
+                            android:textSize="13dp" />
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/pointeroff" />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="1dp">
+
+                        <EditText
+                            android:id="@+id/descField"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="sans-serif"
+                            android:hint="Descreption"
+                            android:inputType="textMultiLine"
+                            android:maxLength="4000"
+                            android:maxLines="15"
+                            android:paddingLeft="5dp"
+                            android:textColor="#616161"
+                            android:textColorHint="@color/md_grey_500"
+                            android:textSize="13dp" />
+                    </ScrollView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <!-- <item android:id="@+id/action_PinnedPost"
+        android:icon="@drawable/pinnedpost"
+        android:title="Add Status"
+        app:showAsAction="always" /> -->
+
+    <item android:id="@+id/action_add_Refresh"
+        android:icon="@drawable/crop_image_menu_rotate_right"
+        android:title="Add Status"
+        app:showAsAction="always" />
+
+</menu>

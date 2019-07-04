@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PicBit</string>
+    <string name="title_activity_post_status">PostStatusActivity</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="Category">Select Category</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="title_activity_main__tabbed">MainActivity_Tabbed</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="terms"></string>
+    <string name="az_appkey">40cd301e930591f1304a6321924eed63</string>
+</resources>

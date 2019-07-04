@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    tools:context="com.picbit.info.android.categoryselectlist">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.85"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="7"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="60dp"
+                    android:background="@drawable/setupprofile_box1"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="8dp"
+                    android:text="Upload Category"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="22dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/Upload_Category_UserImage"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="60dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#00ffffff"
+                    android:gravity="right"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/userimage" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6">
+
+            <ListView
+                android:id="@+id/Upload_Category_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:descendantFocusability="blocksDescendants"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="89dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
