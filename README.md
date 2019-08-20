@@ -35,3 +35,6 @@ It’s designed on the idea where a Person can write his/her reviews on a topic 
 - Android (JAVA)
 - Firebase
 - IDE - Android Studio
+
+## Installable App Link
+https://drive.google.com/open?id=1fceI0_JrEV-3bIIn1vdgg66bGxLAygNw
